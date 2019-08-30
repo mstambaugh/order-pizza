@@ -10,6 +10,22 @@ Cart.prototype.addOrderItem = function(item) {
   this.OrderItem.push(item)
 }
 
+Cart.prototype.addOrderPrice = function(itemprice) {
+  this.OrderPrice.push(itemprice)
+}
+
+Cart.prototype.deleteOrderItem = function(item) {
+  for (var i = 0; i < this.orderItems.length; i++) {
+  //   if (this.orderItems[i]) {
+  //     if (this.orderItems[i].id == id) {
+  //       delete this.OrderItem[i];
+  //       return true;
+  //     }
+  //   }
+  // };
+  // return false;
+
+
 
 // function Item(expensivetopping, cheaptopping, sauce, crust) {
 //   this.expensivetopping = expensivetopping,
@@ -18,7 +34,7 @@ Cart.prototype.addOrderItem = function(item) {
 //   this.crust = crust
 // }
 
-Item.prototype.removeOrderItem = function(remove)
+Cart.prototype.removeOrderItem = function(remove)
   this.Item
 
 Item.prototype.addOrderItem = function() {
@@ -36,10 +52,12 @@ Item.prototype.addOrderItem = function() {
   }
 }
 // Front End
+var cart = new Cart();
 $(document).ready(function() {
   $("#order").submit(function(event) {
     event.preventDefault();
     var customer = $("#customer-name").val();
+  
 
 
   });
