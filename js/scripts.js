@@ -1,11 +1,22 @@
 // Business End
-function Order ()
+function Order() {
+  this.OrderItem = []
+  this.customer = "name"
+}
 
-Order.protoype.addOrder
+Order.prototype.addOrderItem = function(order)
+  this.OrderItem.push(order)
+
+function Item() {
+  this.expensivetopping = [],
+  this.cheaptopping = []
+  this.sauce = ()
+}
 
 
 // Front End
 $(document).ready(function(){
-  $("#start").submit(function(event) {
+  $("#order").submit(function(event) {
     event.preventDefault();
+  });
 });
