@@ -24,8 +24,8 @@
       </div>
     </form>
 
-    <div class="row">
-      <div class="<col>">
+    <div class="row" >
+      <div class="col" id = "menu">
 
         <h2>Size</h2>
         <select name="size">
@@ -37,46 +37,46 @@
         <h2>Protein Toppings (+$2.00 for each topping)</h2>
 
         <div>
-          <input type="checkbox" id="protein1" name="Pepperoni" value= 2>
+          <input type="checkbox" id="protein1" name="Pepperoni" value= "2">
           <label for="protein1">Pepperoni</label>
         </div>
         <div>
-          <input type="checkbox" id="protein2" name="Ham" value= 2>
+          <input type="checkbox" id="protein2" name="Ham" value= "2">
           <label for="protein2">Ham</label>
         </div>
         <div>
-          <input type="checkbox" id="protein3" name="Salami" value= 2>
+          <input type="checkbox" id="protein3" name="Salami" value= "2">
           <label for="protein3">Salami</label>
         </div>
         <div>
-          <input type="checkbox" id="protein4" name="Canadian bacon" value= 2>
+          <input type="checkbox" id="protein4" name="Canadian bacon" value= "2">
           <label for="protein4">Canadian Bacon</label>
         </div>
         <div>
-          <input type="checkbox" id="protein5" name="Proscuitto" value= 2>
+          <input type="checkbox" id="protein5" name="Proscuitto" value= "2">
           <label for="protein5">Proscuitto</label>
         </div>
 
         <h2>Veggie Toppings(+$1.00 for each topping)</h2>
         <div>
-          <input type="checkbox" id="veggie1" name="maters" value= 1>
+          <input type="checkbox" id="veggie1" name="maters" value= "1">
           <label for="veggie1">Tomatoes</label>
         </div>
         <div>
-          <input type="checkbox" id="veggie2" name="shrooms" value= 1>
+          <input type="checkbox" id="veggie2" name="shrooms" value= "1">
           <label for="veggie2">Mushrooms</label>
         </div>
         <div>
-          <input type="checkbox" id="veggie3" name="spinach" value= 1>
+          <input type="checkbox" id="veggie3" name="spinach" value= "1">
           <label for="veggie3">Spinach</label>
         </div>
         <div>
-          <input type="checkbox" id="veggie4" name="worstever" value= 1>
+          <input type="checkbox" id="veggie4" name="worstever" value= "1">
 
           <label for="veggie4">Bell Peppers</label>
         </div>
         <div>
-          <input type="checkbox" id="veggie5" name="sacrilige" value= 1>
+          <input type="checkbox" id="veggie5" name="sacrilige" value= "1">
           <label for="veggie5">Pineapple</label>
         </div>
 
@@ -98,13 +98,31 @@
       </div>
       <button type="submit" id="additem" name="button">Add Item</button>
     </div>
+    <div class="col" id="ordersummary">
 
-    <div class="orderbuttons">
-      <button type="submit" id="delivery" name="button">Place Delivery Order(+$5.00)</button>
-      <button type="submit" id="pick-up" name="button">Pick-up</button>
+
+      <div class="ordertotal">
+        <h4> Order Total <br><span class=" "> 0</span></h4>
+      </div>
+      <div class="itemsincart">
+        <h4> Items in Cart <br><span class=" "> 0</span></h4>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="orderbuttons">
+        <button type="submit" id="delivery" name="button">Place Delivery Order(+$5.00)</button>
+        <button type="submit" id="pick-up" name="button">Pick-up</button>
+      </div>
     </div>
+
   </div>
 
+
+
+
+<!--add a tip entry box?  -->
 
 </body>
 </html>
