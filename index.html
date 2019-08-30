@@ -5,7 +5,7 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
-  <link rel="shortcut icon" type="image/png" href=" ">
+  <!-- <link rel="shortcut icon" type="image/png" href=" "> -->
   <title>Pizza Pun Name Here</title>
 </head>
 
@@ -28,85 +28,83 @@
       <div class="<col>">
 
         <h2>Size</h2>
-          <select name="size">
-            <option value="small">8" ($8.00)</option>
-            <option value="medium">10" ($10.00)</option>
-            <option value="large">12" ($12.00)</option>
-            <option value="sheet">14" sheet ($16.00)</option>
-          </select>
-        <h2>Protein Toppings (First topping free, +$2.00 for each additional topping)</h2>
+        <select name="size">
+          <option value="8">8" ($8.00)</option>
+          <option value="10">10" ($10.00)</option>
+          <option value="12">12" ($12.00)</option>
+          <option value="16">14" sheet ($16.00)</option>
+        </select>
+        <h2>Protein Toppings (+$2.00 for each topping)</h2>
 
         <div>
-          <input type="checkbox" id="protein1" name="Pepperoni"
-          checked>
+          <input type="checkbox" id="protein1" name="Pepperoni" value= 2>
           <label for="protein1">Pepperoni</label>
         </div>
         <div>
-          <input type="checkbox" id="protein2" name="Ham">
+          <input type="checkbox" id="protein2" name="Ham" value= 2>
           <label for="protein2">Ham</label>
         </div>
         <div>
-          <input type="checkbox" id="protein3" name="Salami"
-          checked>
+          <input type="checkbox" id="protein3" name="Salami" value= 2>
           <label for="protein3">Salami</label>
         </div>
         <div>
-          <input type="checkbox" id="protein4" name="Canadian bacon">
+          <input type="checkbox" id="protein4" name="Canadian bacon" value= 2>
           <label for="protein4">Canadian Bacon</label>
         </div>
         <div>
-          <input type="checkbox" id="protein5" name="Proscuitto"
-          checked>
+          <input type="checkbox" id="protein5" name="Proscuitto" value= 2>
           <label for="protein5">Proscuitto</label>
         </div>
 
-        <h2>Veggie Toppings(First two toppings free, +$1.00 for each additional topping)</h2>
+        <h2>Veggie Toppings(+$1.00 for each topping)</h2>
         <div>
-          <input type="checkbox" id="veggie1" name="maters"
-          checked>
+          <input type="checkbox" id="veggie1" name="maters" value= 1>
           <label for="veggie1">Tomatoes</label>
         </div>
         <div>
-          <input type="checkbox" id="veggie2" name="shrooms"
-          checked>
+          <input type="checkbox" id="veggie2" name="shrooms" value= 1>
           <label for="veggie2">Mushrooms</label>
         </div>
         <div>
-          <input type="checkbox" id="veggie3" name="spinach"
-          checked>
+          <input type="checkbox" id="veggie3" name="spinach" value= 1>
           <label for="veggie3">Spinach</label>
         </div>
         <div>
-          <input type="checkbox" id="veggie4" name="worstever"
-          checked>
+          <input type="checkbox" id="veggie4" name="worstever" value= 1>
+
           <label for="veggie4">Bell Peppers</label>
         </div>
         <div>
-          <input type="checkbox" id="veggie5" name="sacrilige"
-          checked>
+          <input type="checkbox" id="veggie5" name="sacrilige" value= 1>
           <label for="veggie5">Pineapple</label>
         </div>
 
         <h2>Sauce</h2>
-          <select name="sauce">
-            <option value="tomato">Tomato</option>
-            <option value="pesto">Pesto</option>
-            <option value="oil">Olive Oil and Garlic</option>
-            <option value="white">White Sauce</option>
-          </select>
+        <select name="sauce">
+          <option value="tomato">Tomato</option>
+          <option value="pesto">Pesto</option>
+          <option value="oil">Olive Oil and Garlic</option>
+          <option value="white">White Sauce</option>
+        </select>
 
-          <h2>Crust</h2>
-            <select name="crust">
-              <option value="thin">Thin Crust</option>
-              <option value="regular">Regular Crust</option>
-              <option value="chicago">Chicago Style Deep Dish</option>
-              <option value="glutenfree">Gluten-Free</option>
-            </select>
-        </div>
+        <h2>Crust</h2>
+        <select name="crust">
+          <option value="thin">Thin Crust</option>
+          <option value="regular">Regular Crust</option>
+          <option value="chicago">Chicago Style Deep Dish</option>
+          <option value="glutenfree">Gluten-Free</option>
+        </select>
       </div>
+      <button type="submit" id="additem" name="button">Add Item</button>
     </div>
 
-    <!-- 2 buttons for submit, Delivery or takeout (add 5 dollars if delivery) -->
+    <div class="orderbuttons">
+      <button type="submit" id="delivery" name="button">Place Delivery Order(+$5.00)</button>
+      <button type="submit" id="pick-up" name="button">Pick-up</button>
+    </div>
+  </div>
 
-  </body>
-  </html>
+
+</body>
+</html>
