@@ -1,21 +1,27 @@
 // Business End
-function Cart() {
-  this.OrderItems = [],
-  this.OrderPrices = [],
-  this.OrderTotal = 0,
-  this.customer = "name"
+function Cart(toppings, crust, sauce, size, total, name) {
+  this.toppings = toppings,
+  this.crust = crust,
+  this.sauce = sauce
+  this.size = size,
+  this.total = total,
+  this.customer = name,
 }
 
-Cart.prototype.addOrderItem = function(item) {
-  this.OrderItem.push(item)
+Cart.prototype.addtopping = function(toppings) {
+  this.topping.push(item)
 }
 
-Cart.prototype.addOrderPrice = function(itemprice) {
+Cart.prototype.total = function(total) {
   this.OrderPrice.push(itemprice)
 }
+Cart.prototype.order = function() {
+  return "You are ordering a " + this.size + " pizza with " + this.crust + " crust, " + this.sauce + " sauce, and " + this.toppings " . Your total for pickup will be " + this.total + " .";
+}
 
-Cart.prototype.deleteOrderItem = function(item) {
-  for (var i = 0; i < this.orderItems.length; i++) {
+
+// Cart.prototype.deleteOrderItem = function(item) {
+//   for (var i = 0; i < this.orderItems.length; i++) {
   //   if (this.orderItems[i]) {
   //     if (this.orderItems[i].id == id) {
   //       delete this.OrderItem[i];
@@ -34,22 +40,14 @@ Cart.prototype.deleteOrderItem = function(item) {
 //   this.crust = crust
 // }
 
-Cart.prototype.removeOrderItem = function(remove)
-  this.Item
+// Cart.prototype.removeOrderItem = function(remove)
+//   this.Item
+//
+// Item.prototype.addOrderItem = function() {
+//   var ordertotal = 0;
+//   this.expensivetopping.forEach(function(val) {
+//     order = expensivetopping + val;
 
-Item.prototype.addOrderItem = function() {
-  var ordertotal = 0;
-  this.expensivetopping.forEach(function(val) {
-    order = expensivetopping + val;
-  // });
-  // this.totalscore += turnpoints;
-  // player1.turn = true
-  // player2.turn = true
-  // this.turn = false
-  // this.turnscore = [];
-  // if (this.totalscore >= 100) {
-  //   game.endGame();
-  }
 }
 // Front End
 var cart = new Cart();
@@ -57,7 +55,7 @@ $(document).ready(function() {
   $("#order").submit(function(event) {
     event.preventDefault();
     var customer = $("#customer-name").val();
-  
+
 
 
   });
