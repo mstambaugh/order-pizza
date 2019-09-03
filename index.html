@@ -12,17 +12,17 @@
 <body>
   <div class="container">
     <h1>Delivery</h1>
-
-    <form id="start" action="index.html" method="post">
       <div class="row customername">
-
-        <label for="customerinput1">Full Name for Delivery</label><br>
-        <input type="text" name="" value="" id="customername">
-        <label for="customerinput2">Phone Number</label><br>
-        <input type="text" name="" value="" id="customerphonenumber">
-
+        <div class="form-group">
+          <label for="customername">Full Name for Delivery</label>
+          <input id="customerName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="customerinput2">Phone Number</label>
+          <input id="customerPhoneNumber" type="text">
+        </div>
       </div>
-    </form>
+
 
     <div class="row" >
       <div class="col" id = "menu">
@@ -113,7 +113,7 @@
       </div> -->
       <div class="orderbuttons">
         <!-- <button type="submit" id="delivery" name="button">Place Delivery Order(+$5.00)</button> -->
-        <button type="submit" id="pick-up" name="button">Pick-up</button>
+        <button type="submit" id="pickup" name="button">Pick-up</button>
       </div>
     </div>
 

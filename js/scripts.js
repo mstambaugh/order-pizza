@@ -1,25 +1,25 @@
 // Business Logic
-function Cart(toppings, crust, sauce, size, total, name) {
-  this.toppings = toppings,
-  this.crust = crust,
-  this.sauce = sauce
-  this.size = size,
-  this.total = total,
-  this.customer = name
-}
+// function Cart(toppings, crust, sauce, size, total, name) {
+//   this.toppings = toppings,
+//   this.crust = crust,
+//   this.sauce = sauce
+//   this.size = size,
+//   this.total = total,
+//   this.customer = name
+// }
+//
+// Cart.prototype.addtoppings = function(toppings) {
+//   this.topping.push(toppings)
+// }
+// Cart.prototype.addcrust = function(crust) {
+//   this.crust.push(crust)
+// }
+// Cart.prototype.addsauce = function(sauce) {
+//   this.sauce.push(sauce)
+// }
+// Cart.prototype.total = function(total) {
+//   this.OrderPrice.push(total)
 
-Cart.prototype.addtoppings = function(toppings) {
-  this.topping.push(toppings)
-}
-Cart.prototype.addcrust = function(crust) {
-  this.crust.push(crust)
-}
-Cart.prototype.addsauce = function(sauce) {
-  this.sauce.push(sauce)
-}
-Cart.prototype.total = function(total) {
-  this.OrderPrice.push(total)
-}
 // Cart.prototype.order = function() {
 //   return "You are ordering a " + this.size + " pizza with " + this.crust + " crust, " + this.sauce + " sauce, and " + this.toppings " . Your total for pickup will be " + this.total + " .";
 // }
@@ -55,18 +55,18 @@ Cart.prototype.total = function(total) {
 
 
 // Front End Logic
-var cart = new Cart();
+// var cart = new Cart();
 $(document).ready(function() {
-  $("#pick-up").submit(function(event) {
+  $("#pickup").submit(function(event) {
     event.preventDefault();
-    var customer = $("#customername").val();
-    console.log("#customername")
+    var customerName = $("#customerName").val();
+    console.log(customerName)
     // console.log(customerphonenumber);
-    var customerNumber = $("#customerphonenumber").val();
+    var customerNumber = $("#customerPhoneNumber").val();
     var size = ParseInt("#size");
     var crust = ("");
     var sauce = ("");
-    var total = document.getElementsByIdName('protein');
+    // var total = document.getElementsByIdName('protein');
   });
 });
 
