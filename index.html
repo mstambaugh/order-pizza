@@ -17,9 +17,9 @@
       <div class="row customername">
 
         <label for="customerinput1">Full Name for Delivery</label><br>
-        <input type="text" name="" value="" id="customer name">
+        <input type="text" name="" value="" id="customername">
         <label for="customerinput2">Phone Number</label><br>
-        <input type="text" name="" value="" id="customer phone number">
+        <input type="text" name="" value="" id="customerphonenumber">
 
       </div>
     </form>
@@ -28,36 +28,36 @@
       <div class="col" id = "menu">
 
         <h2>Size</h2>
-        <select name="size">
+        <select name="size" id='size'>
           <option value="8">8" ($8.00)</option>
           <option value="10">10" ($10.00)</option>
           <option value="12">12" ($12.00)</option>
           <option value="16">14" sheet ($16.00)</option>
         </select>
-        <h2>Protein Toppings (+$2.00 for each topping)</h2>
+        <h2>Toppings (+$2.00 for each topping)</h2>
 
         <div>
-          <input type="checkbox" id="protein1" name="Pepperoni" value= "2">
-          <label for="protein1">Pepperoni</label>
+          <input type="checkbox" id="protein" name="Pepperoni" value= "2">
+          <label for="protein">Pepperoni</label>
         </div>
         <div>
-          <input type="checkbox" id="protein2" name="Ham" value= "2">
-          <label for="protein2">Ham</label>
+          <input type="checkbox" id="protein" name="Ham" value= "2">
+          <label for="protein">Ham</label>
         </div>
         <div>
           <input type="checkbox" id="protein3" name="Salami" value= "2">
-          <label for="protein3">Salami</label>
+          <label for="protein">Salami</label>
         </div>
         <div>
           <input type="checkbox" id="protein4" name="Canadian bacon" value= "2">
-          <label for="protein4">Canadian Bacon</label>
+          <label for="protein">Canadian Bacon</label>
         </div>
         <div>
           <input type="checkbox" id="protein5" name="Proscuitto" value= "2">
-          <label for="protein5">Proscuitto</label>
+          <label for="protein">Proscuitto</label>
         </div>
 
-        <h2>Veggie Toppings(+$1.00 for each topping)</h2>
+        <!-- <h2> Toppings(+$1.00 for each topping)</h2>
         <div>
           <input type="checkbox" id="veggie1" name="maters" value= "1">
           <label for="veggie1">Tomatoes</label>
@@ -78,7 +78,7 @@
         <div>
           <input type="checkbox" id="veggie5" name="sacrilige" value= "1">
           <label for="veggie5">Pineapple</label>
-        </div>
+        </div> -->
 
         <h2>Sauce</h2>
         <select name="sauce">
@@ -95,13 +95,13 @@
           <option value="chicago">Chicago Style Deep Dish</option>
           <option value="glutenfree">Gluten-Free</option>
         </select>
-      </div>
+      <!-- </div>
       <button type="submit" id="additem" name="button">Add Item</button>
-    </div>
-    <div class="col" id="ordersummary">
+      </div> -->
+    <!-- <div class="col" id="ordersummary"> -->
 
 
-      <div class="ordertotal">
+      <!-- <div class="ordertotal">
         <h4> Order Total <br><span class=" "> 0</span></h4>
       </div>
       <div class="itemsincart">
@@ -110,9 +110,9 @@
           <li></li>
           <li></li>
         </ul>
-      </div>
+      </div> -->
       <div class="orderbuttons">
-        <button type="submit" id="delivery" name="button">Place Delivery Order(+$5.00)</button>
+        <!-- <button type="submit" id="delivery" name="button">Place Delivery Order(+$5.00)</button> -->
         <button type="submit" id="pick-up" name="button">Pick-up</button>
       </div>
     </div>
