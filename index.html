@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,118 +12,144 @@
 
 <body>
   <div class="container">
-    <h1>Delivery</h1>
+    <form id="pizzaform">
+      <h1>Delivery</h1>
       <div class="row customername">
-        <div class="form-group">
+        <div class="form">
           <label for="customername">Full Name for Delivery</label>
-          <input id="customerName" class="form-control" type="text">
+          <input id="customerName" type="text">
         </div>
-        <div class="form-group">
+        <div class="form">
           <label for="customerinput2">Phone Number</label>
           <input id="customerPhoneNumber" type="text">
         </div>
       </div>
 
 
-    <div class="row" >
-      <div class="col" id = "menu">
+      <div class="row">
+        <div class="col" id = "menu">
 
-        <h2>Size</h2>
-        <select name="size" id='size'>
-          <option value="8">8" ($8.00)</option>
-          <option value="10">10" ($10.00)</option>
-          <option value="12">12" ($12.00)</option>
-          <option value="16">14" sheet ($16.00)</option>
-        </select>
-        <h2>Toppings (+$2.00 for each topping)</h2>
+          <h2>Size</h2>
+          <select name="size" id='size'>
+            <option value="8">8" ($8.00)</option>
+            <option value="10">10" ($10.00)</option>
+            <option value="12">12" ($12.00)</option>
+            <option value="16">14" sheet ($16.00)</option>
+          </select>
 
-        <div>
-          <input type="checkbox" id="protein" name="Pepperoni" value= "2">
-          <label for="protein">Pepperoni</label>
+          <h2>Pizza Menu</h2>
+          <div class=form>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice" value="0" checked>
+                Pepperoni
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="choice" value="6">
+                Proscuitto and Brie
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="disgusting" value="666">
+                Pineapple and Ham
+              </label>
+            </div>
+          </div>
         </div>
-        <div>
-          <input type="checkbox" id="protein" name="Ham" value= "2">
-          <label for="protein">Ham</label>
-        </div>
-        <div>
-          <input type="checkbox" id="protein3" name="Salami" value= "2">
-          <label for="protein">Salami</label>
-        </div>
-        <div>
-          <input type="checkbox" id="protein4" name="Canadian bacon" value= "2">
-          <label for="protein">Canadian Bacon</label>
-        </div>
-        <div>
-          <input type="checkbox" id="protein5" name="Proscuitto" value= "2">
-          <label for="protein">Proscuitto</label>
+      </div>
+
+        <div class="row">
+          <select name="crust">
+            <option value="thin">Thin Crust</option>
+            <option value="regular">Regular Crust</option>
+            <option value="chicago">Chicago Style Deep Dish</option>
+            <option value="glutenfree">Gluten-Free</option>
+          </select>
         </div>
 
-        <!-- <h2> Toppings(+$1.00 for each topping)</h2>
-        <div>
-          <input type="checkbox" id="veggie1" name="maters" value= "1">
-          <label for="veggie1">Tomatoes</label>
+        <div class="orderbuttons">
+          <!-- <button type="submit" id="delivery" name="button">Place Delivery Order(+$5.00)</button> -->
+          <button type="click" id="pickup" name="button">Pick-up</button>
         </div>
-        <div>
-          <input type="checkbox" id="veggie2" name="shrooms" value= "1">
-          <label for="veggie2">Mushrooms</label>
-        </div>
-        <div>
-          <input type="checkbox" id="veggie3" name="spinach" value= "1">
-          <label for="veggie3">Spinach</label>
-        </div>
-        <div>
-          <input type="checkbox" id="veggie4" name="worstever" value= "1">
+      </form>
+    </div>
 
-          <label for="veggie4">Bell Peppers</label>
-        </div>
-        <div>
-          <input type="checkbox" id="veggie5" name="sacrilige" value= "1">
-          <label for="veggie5">Pineapple</label>
-        </div> -->
 
-        <h2>Sauce</h2>
+  </body>
+  </html>
+
+  <!--add a tip entry box?  -->
+
+
+  <!-- </div>
+    <button type="submit" id="additem" name="button">Add Item</button>
+  </div> -->
+  <!-- <div class="col" id="ordersummary"> -->
+
+
+    <!-- <div class="ordertotal">
+      <h4> Order Total <br><span class=" "> 0</span></h4>
+    </div>
+    <div class="itemsincart">
+      <h4> Items in Cart <br><span class=" "> 0</span></h4>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </div> -->
+
+
+    <!-- <div>
+      <input type="checkbox" id="protein" name="Pepperoni" value= "2">
+      <label for="protein">Pepperoni</label>
+    </div>
+    <div>
+      <input type="checkbox" id="protein" name="Ham" value= "2">
+      <label for="protein">Ham</label>
+    </div>
+    <div>
+      <input type="checkbox" id="protein3" name="Salami" value= "2">
+      <label for="protein">Salami</label>
+    </div>
+    <div>
+      <input type="checkbox" id="protein4" name="Canadian bacon" value= "2">
+      <label for="protein">Canadian Bacon</label>
+    </div>
+    <div>
+      <input type="checkbox" id="protein5" name="Proscuitto" value= "2">
+      <label for="protein">Proscuitto</label>
+    </div> -->
+
+    <!-- <h2> Toppings(+$1.00 for each topping)</h2>
+      <div>
+        <input type="checkbox" id="veggie1" name="maters" value= "1">
+        <label for="veggie1">Tomatoes</label>
+      </div>
+      <div>
+        <input type="checkbox" id="veggie2" name="shrooms" value= "1">
+        <label for="veggie2">Mushrooms</label>
+      </div>
+      <div>
+        <input type="checkbox" id="veggie3" name="spinach" value= "1">
+        <label for="veggie3">Spinach</label>
+      </div>
+      <div>
+        <input type="checkbox" id="veggie4" name="worstever" value= "1">
+
+        <label for="veggie4">Bell Peppers</label>
+      </div>
+      <div>
+        <input type="checkbox" id="veggie5" name="sacrilige" value= "1">
+        <label for="veggie5">Pineapple</label>
+      </div> -->
+
+      <!-- <h2>Sauce</h2>
         <select name="sauce">
           <option value="tomato">Tomato</option>
           <option value="pesto">Pesto</option>
           <option value="oil">Olive Oil and Garlic</option>
           <option value="white">White Sauce</option>
-        </select>
-
-        <h2>Crust</h2>
-        <select name="crust">
-          <option value="thin">Thin Crust</option>
-          <option value="regular">Regular Crust</option>
-          <option value="chicago">Chicago Style Deep Dish</option>
-          <option value="glutenfree">Gluten-Free</option>
-        </select>
-      <!-- </div>
-      <button type="submit" id="additem" name="button">Add Item</button>
-      </div> -->
-    <!-- <div class="col" id="ordersummary"> -->
-
-
-      <!-- <div class="ordertotal">
-        <h4> Order Total <br><span class=" "> 0</span></h4>
-      </div>
-      <div class="itemsincart">
-        <h4> Items in Cart <br><span class=" "> 0</span></h4>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </div> -->
-      <div class="orderbuttons">
-        <!-- <button type="submit" id="delivery" name="button">Place Delivery Order(+$5.00)</button> -->
-        <button type="submit" id="pickup" name="button">Pick-up</button>
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-<!--add a tip entry box?  -->
-
-</body>
-</html>
+        </select> -->

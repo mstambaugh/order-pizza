@@ -61,11 +61,18 @@ $(document).ready(function() {
     event.preventDefault();
     var customerName = $("#customerName").val();
     console.log(customerName)
-    // console.log(customerphonenumber);
     var customerNumber = $("#customerPhoneNumber").val();
-    var size = ParseInt("#size");
-    var crust = ("");
-    var sauce = ("");
+    // event.preventDefault();
+    // console.log(customerPhoneNumber);
+    // var size = ParseInt("#size");
+    // var crust = ("");
+    // var sauce = ("");
+
+  //
+  //   $("form#some-form").submit(function(event) {
+  // var someInput = $("input#some-input").val();
+
+
     // var total = document.getElementsByIdName('protein');
   });
 });
