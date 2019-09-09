@@ -1,5 +1,18 @@
 body {
-  font-family: arial;
-  background-color: red;
+  font-family: Georgia;
+  background-color: maroon;
   color: white;
+}
+.card {
+  color: maroon;
+
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
