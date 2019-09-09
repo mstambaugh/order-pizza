@@ -1,11 +1,5 @@
-#menu {
-  display: block;
-  text-align: left;
-  padding-right: 20px;
-}
-
-#ordersummary {
-  display: block;
-  text-align: right;
-  padding-left: 20px;
+body {
+  font-family: arial;
+  background-color: red;
+  color: white;
 }
