@@ -12,9 +12,11 @@ _This application collects username, phone number, and drop-box order selections
 
 | Behavior | Input | Expected Output |
 |:-:|:-:|:-:|
-|The program |  | |
-
-
+|The program collects a user inputted string for name and number which are stored but not displayed to the user| "Molly" "555-5555" | "Molly" "555-5555" |
+|The program gives drop down box options with assigned values for size, type of pizza, and crust| "style" "size" "crust" | "2" "14" " " |
+|The program parseInts user inputs for size and type and assigns them to a new Pizza object| "2" "14" | 2 14 |
+|The program's Pizza object constructor runs three prototype methods to add these two key value pairs, size and type, generating a third key value pair, pizza.total| 2 14 | 16 |
+|The program returns the value of pizza.total, assigns it to a new variable, and displays it to the page in a span| 16 | "16" |
 
 ## Setup/Installation Requirements
 
